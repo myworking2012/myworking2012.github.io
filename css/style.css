@@ -507,9 +507,10 @@ a {
     max-width: 900px;
     flex-shrink: 0
 }
+
+/* padding-top: 165px; */
 #scheme-Paradox .material-layout .material-layout__content {
     position: relative;
-    /* padding-top: 165px; */
     padding-top: 85px;
     margin: 0 auto;
     width: 100%;
