@@ -208,7 +208,8 @@
     <!-- Import jQuery -->
     
         <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
-    
+
+		<script>lsloader.load("jq_js","/js/jquery.gradientify.min.js?qdusAULNeBksqffqUM2+Ig==", true)</script>
 
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -296,6 +297,10 @@
 
                     <!-- Top Anchor -->
                     <div id="top"></div>
+
+                    <div>
+                        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1491585&auto=1&height=66"></iframe>
+                    </div>
 
                     
                         <!-- Hamburger Button -->
@@ -1203,7 +1208,15 @@ It will not impact the appearance and can give developers a lot of support :)
 </script>
 
 <!-- Custom Footer -->
-
+<script>
+	$('body').gradientify({
+		gradients: [
+			{ start: [49,76,172], stop: [242,159,191] },
+			{ start: [255,103,69], stop: [240,154,241] },
+			{ start: [33,229,241], stop: [235,236,117] }
+		]
+	});
+</script>
 
 
 <script>
