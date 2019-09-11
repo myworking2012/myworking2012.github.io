@@ -28,7 +28,8 @@
     </style>
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-</head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -233,20 +234,20 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 
                 
                 
-                <a href="/categories/编程技术/" title="编程技术: 1">
+                <a href="/categories/养生/" title="养生: 3">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F9EBEA;">编程技术
-                        <span class="tag-length">1</span>
+                            style="background-color: #F9EBEA;">养生
+                        <span class="tag-length">3</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/养生/" title="养生: 3">
+                <a href="/categories/编程技术/" title="编程技术: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F5EEF8;">养生
-                        <span class="tag-length">3</span>
+                            style="background-color: #F5EEF8;">编程技术
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
@@ -319,7 +320,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                     color: '#3C4858'
                 }
             },
-            indicator: [{"name":"编程技术","max":4},{"name":"养生","max":4},{"name":"励志","max":4},{"name":"技术","max":4},{"name":"激励","max":4}],
+            indicator: [{"name":"养生","max":4},{"name":"编程技术","max":4},{"name":"励志","max":4},{"name":"技术","max":4},{"name":"激励","max":4}],
             nameGap: 5,
             center: ['50%','55%'],
             radius: '66%'
@@ -330,7 +331,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             itemStyle: {normal: {areaStyle: {type: 'default'}}},
             data : [
                 {
-                    value : [1,3,3,1,1],
+                    value : [3,1,3,1,1],
                     name : '文章分类数量'
                 }
             ]
@@ -345,36 +346,38 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
 <footer class="page-footer bg-color">
     <div class="container row center-align">
-        <div class="col s12 m8 l8 copy-right">
+        <div class="col s18 m8 l8 copy-right" style="width: 100%;">
             
             
-                &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">1.8k</span>
+                <span style="margin-right: 20px;">
+                    <i class="fa fa-area-chart"></i>&nbsp;站点总字数：
+                    <span class="white-color">1.8k</span>
+                </span>
             
 
             
 			
-                <br>
                 
-                <span id="busuanzi_container_site_pv">
+                
+                <span id="busuanzi_container_site_pv" style="margin-right: 20px;">
                     <i class="fa fa-heart-o"></i>
-                    本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
+                    本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>次
                 </span>
                 
                 
                 <span id="busuanzi_container_site_uv">
-                    次，&nbsp;<i class="fa fa-users"></i> 访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
+                    <i class="fa fa-users"></i> 访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
                 </span>
                 
             
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
+        <!-- <div class="col s12 m4 l4 social-link social-statis">
 
 
 
 
 
-</div>
+</div> -->
     </div>
 </footer>
 

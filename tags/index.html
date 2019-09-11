@@ -28,7 +28,8 @@
     </style>
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-</head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -232,10 +233,19 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <div class="tag-chips">
                 
                 
+                <a href="/tags/养生/" title="养生: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="养生" style="background-color: #F9EBEA;">养生
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/tags/JS/" title="JS: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="JS" style="background-color: #F9EBEA;">JS
+                            data-tagname="JS" style="background-color: #F5EEF8;">JS
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -244,17 +254,8 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 <a href="/tags/正则表达式/" title="正则表达式: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="正则表达式" style="background-color: #F5EEF8;">正则表达式
+                            data-tagname="正则表达式" style="background-color: #D5F5E3;">正则表达式
                         <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/养生/" title="养生: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="养生" style="background-color: #D5F5E3;">养生
-                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 
@@ -354,7 +355,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 <script type="text/javascript">
     
 
-    $('#tag-wordcloud').jQCloud([{"text":"JS","weight":1,"link":"http://www.stonelee.top/tags/JS/"},{"text":"正则表达式","weight":1,"link":"http://www.stonelee.top/tags/正则表达式/"},{"text":"养生","weight":2,"link":"http://www.stonelee.top/tags/养生/"},{"text":"激励","weight":2,"link":"http://www.stonelee.top/tags/激励/"},{"text":"编码","weight":1,"link":"http://www.stonelee.top/tags/编码/"},{"text":"解码","weight":1,"link":"http://www.stonelee.top/tags/解码/"},{"text":"URL","weight":1,"link":"http://www.stonelee.top/tags/URL/"},{"text":"健康","weight":1,"link":"http://www.stonelee.top/tags/健康/"},{"text":"诀窍","weight":1,"link":"http://www.stonelee.top/tags/诀窍/"},{"text":"生活","weight":1,"link":"http://www.stonelee.top/tags/生活/"},{"text":"读书","weight":1,"link":"http://www.stonelee.top/tags/读书/"}], {
+    $('#tag-wordcloud').jQCloud([{"text":"养生","weight":2,"link":"http://www.stonelee.top/tags/养生/"},{"text":"JS","weight":1,"link":"http://www.stonelee.top/tags/JS/"},{"text":"正则表达式","weight":1,"link":"http://www.stonelee.top/tags/正则表达式/"},{"text":"激励","weight":2,"link":"http://www.stonelee.top/tags/激励/"},{"text":"编码","weight":1,"link":"http://www.stonelee.top/tags/编码/"},{"text":"解码","weight":1,"link":"http://www.stonelee.top/tags/解码/"},{"text":"URL","weight":1,"link":"http://www.stonelee.top/tags/URL/"},{"text":"健康","weight":1,"link":"http://www.stonelee.top/tags/健康/"},{"text":"诀窍","weight":1,"link":"http://www.stonelee.top/tags/诀窍/"},{"text":"生活","weight":1,"link":"http://www.stonelee.top/tags/生活/"},{"text":"读书","weight":1,"link":"http://www.stonelee.top/tags/读书/"}], {
         autoResize: true
     });
 </script>
@@ -364,36 +365,38 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
 <footer class="page-footer bg-color">
     <div class="container row center-align">
-        <div class="col s12 m8 l8 copy-right">
+        <div class="col s18 m8 l8 copy-right" style="width: 100%;">
             
             
-                &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">1.8k</span>
+                <span style="margin-right: 20px;">
+                    <i class="fa fa-area-chart"></i>&nbsp;站点总字数：
+                    <span class="white-color">1.8k</span>
+                </span>
             
 
             
 			
-                <br>
                 
-                <span id="busuanzi_container_site_pv">
+                
+                <span id="busuanzi_container_site_pv" style="margin-right: 20px;">
                     <i class="fa fa-heart-o"></i>
-                    本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
+                    本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>次
                 </span>
                 
                 
                 <span id="busuanzi_container_site_uv">
-                    次，&nbsp;<i class="fa fa-users"></i> 访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
+                    <i class="fa fa-users"></i> 访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
                 </span>
                 
             
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
+        <!-- <div class="col s12 m4 l4 social-link social-statis">
 
 
 
 
 
-</div>
+</div> -->
     </div>
 </footer>
 

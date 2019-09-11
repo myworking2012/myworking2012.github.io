@@ -28,7 +28,8 @@
     </style>
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-</head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -361,7 +362,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         },
         xAxis: {
             type: 'category',
-            data: ["2018-04","2018-05","2018-06","2018-07","2018-08","2018-09","2018-10","2018-11","2018-12","2019-01","2019-02","2019-03","2019-04"]
+            data: ["2018-09","2018-10","2018-11","2018-12","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09"]
         },
         yAxis: {
             type: 'value',
@@ -371,7 +372,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,2,0,0,0,0,0,0,0,0,0,0,0],
+                data: [0,0,0,0,0,0,0,0,0,0,0,0,0],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -413,7 +414,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"编程技术","value":1},{"name":"养生","value":3},{"name":"励志","value":3},{"name":"技术","value":1},{"name":"激励","value":1}],
+                data: [{"name":"养生","value":3},{"name":"编程技术","value":1},{"name":"励志","value":3},{"name":"技术","value":1},{"name":"激励","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -437,7 +438,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         xAxis: [
             {
                 type: 'category',
-                data: ["养生","激励","解码","JS","编码","正则表达式","URL","健康","诀窍","生活"]
+                data: ["养生","激励","正则表达式","读书","编码","JS","URL","健康","诀窍","生活"]
             }
         ],
         yAxis: [
@@ -618,6 +619,12 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         <div class="tag-chips center-align">
             
             
+            <a href="/tags/养生/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">养生</span>
+            </a>
+            
+            
+            
             <a href="/tags/JS/" target="_blank">
                 <span class="chip center-align waves-effect waves-light chip-default">JS</span>
             </a>
@@ -626,12 +633,6 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             <a href="/tags/正则表达式/" target="_blank">
                 <span class="chip center-align waves-effect waves-light chip-default">正则表达式</span>
-            </a>
-            
-            
-            
-            <a href="/tags/养生/" target="_blank">
-                <span class="chip center-align waves-effect waves-light chip-default">养生</span>
             </a>
             
             
@@ -757,36 +758,38 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 </main>
 <footer class="page-footer bg-color">
     <div class="container row center-align">
-        <div class="col s12 m8 l8 copy-right">
+        <div class="col s18 m8 l8 copy-right" style="width: 100%;">
             
             
-                &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">1.8k</span>
+                <span style="margin-right: 20px;">
+                    <i class="fa fa-area-chart"></i>&nbsp;站点总字数：
+                    <span class="white-color">1.8k</span>
+                </span>
             
 
             
 			
-                <br>
                 
-                <span id="busuanzi_container_site_pv">
+                
+                <span id="busuanzi_container_site_pv" style="margin-right: 20px;">
                     <i class="fa fa-heart-o"></i>
-                    本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
+                    本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>次
                 </span>
                 
                 
                 <span id="busuanzi_container_site_uv">
-                    次，&nbsp;<i class="fa fa-users"></i> 访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
+                    <i class="fa fa-users"></i> 访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
                 </span>
                 
             
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
+        <!-- <div class="col s12 m4 l4 social-link social-statis">
 
 
 
 
 
-</div>
+</div> -->
     </div>
 </footer>
 
