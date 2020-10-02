@@ -112,7 +112,7 @@
 
 
           <span style="margin-left: 32px;">文章字数</span>: 
-          449
+          709
           
           <span style="margin-left: 32px;">阅读次数</span>: 
           <span id="busuanzi_value_page_pv"></span> 次
@@ -201,6 +201,38 @@
 <td align="left">可视化研发工具</td>
 </tr>
 </tbody></table>
+<h3 id="UXCore"><a href="#UXCore" class="headerlink" title="UXCore"></a>UXCore</h3><p><a href="http://uxco.re/" target="_blank" rel="noopener">UXCore</a> 一套企业级的前端React UI框架。</p>
+<ul>
+<li><p>丰富的组件功能： 超过 50 个高质量组件供使用</p>
+</li>
+<li><p>专注于企业级中后台应用场景： 强大易用的表单表格</p>
+</li>
+<li><p>精心设计的视觉风格： 深耕中后台场景，让工作变得简单幸福。</p>
+</li>
+</ul>
+<h5 id="安装方法-2"><a href="#安装方法-2" class="headerlink" title="安装方法"></a>安装方法</h5><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-regexp">//</span> 用<span class="hljs-built_in">npm</span>安装<br><span class="hljs-built_in">npm</span> install uxcore --save<br></code></pre></td></tr></table></figure>
+
+<div style="margin-top: 64px;"></div>
+
+<h3 id="React-Suite"><a href="#React-Suite" class="headerlink" title="React Suite"></a>React Suite</h3><p><a href="https://rsuitejs.com/zh/" target="_blank" rel="noopener">React Suite</a> 是一套 React 组件库，为中后台产品而生。致力于创造出贴心的交互设计，同时为开发者提供了友好的开发体验。</p>
+<h5 id="支持的开发环境"><a href="#支持的开发环境" class="headerlink" title="支持的开发环境"></a>支持的开发环境</h5><ul>
+<li>支持 React 16 +</li>
+<li>支持 TypeScript</li>
+<li>支持 Electron</li>
+<li>支持 Reason</li>
+</ul>
+<h5 id="安装方法-3"><a href="#安装方法-3" class="headerlink" title="安装方法"></a>安装方法</h5><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs processing"><span class="hljs-comment">// 用npm安装</span><br>npm i rsuite --<span class="hljs-built_in">save</span><br><br>或者<br><br><span class="hljs-comment">// 用yarn安装</span><br>yarn <span class="hljs-built_in">add</span> rsuite<br></code></pre></td></tr></table></figure>
+
+<div style="margin-top: 64px;"></div>
+
+<h3 id="Element-React"><a href="#Element-React" class="headerlink" title="Element-React"></a>Element-React</h3><p><a href="https://rsuitejs.com/zh/" target="_blank" rel="noopener">Element-React</a> 是一套 React 组件库</p>
+<h5 id="安装方法-4"><a href="#安装方法-4" class="headerlink" title="安装方法"></a>安装方法</h5><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-regexp">//</span> 用<span class="hljs-built_in">npm</span>安装<br><span class="hljs-built_in">npm</span> i element-react --save<br></code></pre></td></tr></table></figure>
+
+<h5 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sql">// 开始前, 你还需要一个主题包<br>npm <span class="hljs-keyword">install</span> <span class="hljs-keyword">element</span>-theme-<span class="hljs-keyword">default</span> <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure>
+
+<h5 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;<br><span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>;<br><span class="hljs-keyword">import</span> &#123; Button &#125; <span class="hljs-keyword">from</span> <span class="hljs-string">'element-react'</span>;<br><br><span class="hljs-keyword">import</span> <span class="hljs-string">'element-theme-default'</span>;<br><br>ReactDOM.render(<br>    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"primary"</span>&gt;</span>Hello<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span></span>, <br>    <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'app'</span>)<br>);<br></code></pre></td></tr></table></figure>
+
+<div style="margin-top: 64px;"></div>
 
       </div>
 

@@ -17,7 +17,7 @@
 
   
 
-  <title>Vue的移动端UI框架 | 超乎想象的酷</title>
+  <title>Vue移动端UI框架 | 超乎想象的酷</title>
 
   
 
@@ -101,7 +101,7 @@
         <div class="type-wrap">
           <a class="article-category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
         </div>
-        <h1 class="title-wrap">Vue的移动端UI框架</h1>
+        <h1 class="title-wrap">Vue移动端UI框架</h1>
         <h2 class="title-sub-wrap">
           <strong>StoneLee</strong>
           <span>发布于</span>
@@ -112,7 +112,7 @@
 
 
           <span style="margin-left: 32px;">文章字数</span>: 
-          162
+          359
           
           <span style="margin-left: 32px;">阅读次数</span>: 
           <span id="busuanzi_value_page_pv"></span> 次
@@ -142,10 +142,23 @@
 
 <div style="margin-top: 64px;"></div>
 
-<h3 id="Cube-UI"><a href="#Cube-UI" class="headerlink" title="Cube UI"></a>Cube UI</h3><p><a href="https://didi.github.io/cube-ui/#/zh-CN" target="_blank" rel="noopener">Cube UI</a> 基于 Vue.js 实现的精致移动端组件库</p>
+<h3 id="Cube-UI"><a href="#Cube-UI" class="headerlink" title="Cube UI"></a>Cube UI</h3><p><a href="https://didi.github.io/cube-ui/#/zh-CN" target="_blank" rel="noopener">Cube UI</a> 滴滴开源的基于 Vue.js 实现的移动端组件库</p>
+<h5 id="安装方法-1"><a href="#安装方法-1" class="headerlink" title="安装方法"></a>安装方法</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql">npm <span class="hljs-keyword">install</span> <span class="hljs-keyword">cube</span>-ui <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure>
+
+<h5 id="引入组件"><a href="#引入组件" class="headerlink" title="引入组件"></a>引入组件</h5><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs clean"><span class="hljs-comment">// 引入全部组件</span><br><span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span><br><span class="hljs-keyword">import</span> Cube <span class="hljs-keyword">from</span> <span class="hljs-string">'cube-ui'</span><br><br>Vue.use(Cube)<br><br><span class="hljs-comment">// 按需引入部分组件</span><br><span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span><br><span class="hljs-keyword">import</span> &#123;<br>  <span class="hljs-comment">/* eslint-disable no-unused-vars */</span><br>  Style,<br>  Button,<br>  ActionSheet<br>&#125; <span class="hljs-keyword">from</span> <span class="hljs-string">'cube-ui'</span><br><br>Vue.use(Button)<br>Vue.use(ActionSheet)<br></code></pre></td></tr></table></figure>
+
 <div style="margin-top: 64px;"></div>
 
 <h3 id="Mint-UI"><a href="#Mint-UI" class="headerlink" title="Mint UI"></a>Mint UI</h3><p><a href="https://mint-ui.github.io/#!/zh-cn" target="_blank" rel="noopener">Mint UI</a> 基于 Vue.js 的移动端组件库</p>
+<h5 id="安装方法-2"><a href="#安装方法-2" class="headerlink" title="安装方法"></a>安装方法</h5><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs angelscript"># Vue <span class="hljs-number">1.</span>x<br>npm install mint-<span class="hljs-symbol">ui@</span><span class="hljs-number">1</span> -S<br><br># Vue <span class="hljs-number">2.0</span><br>npm install mint-ui -S<br></code></pre></td></tr></table></figure>
+
+<h5 id="引入组件-1"><a href="#引入组件-1" class="headerlink" title="引入组件"></a>引入组件</h5><figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs reasonml"><span class="hljs-comment">// 引入全部组件</span><br>import Vue from 'vue';<br>import Mint from 'mint-ui';<br><span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Vue</span>.</span></span>use(Mint);<br><br><span class="hljs-comment">// 按需引入部分组件</span><br>import &#123; Cell, Checklist &#125; from 'mint-ui';<br><span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Vue</span>.</span></span>component(<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Cell</span>.</span></span>name, Cell);<br><span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Vue</span>.</span></span>component(<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Checklist</span>.</span></span>name, Checklist);<br></code></pre></td></tr></table></figure>
+
+<div style="margin-top: 64px;"></div>
+
+<h3 id="Mand-Mobile-2"><a href="#Mand-Mobile-2" class="headerlink" title="Mand Mobile 2"></a>Mand Mobile 2</h3><p><a href="https://didi.github.io/mand-mobile/#/zh-CN/home" target="_blank" rel="noopener">Mand Mobile</a> 面向金融场景的Vue移动端UI组件库，丰富、灵活、实用，快速搭建优质的金融类产品，让复杂的金融场景变简单。</p>
+<h5 id="安装方法-3"><a href="#安装方法-3" class="headerlink" title="安装方法"></a>安装方法</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sql">npm <span class="hljs-keyword">install</span> mand-mobile <span class="hljs-comment">--save</span><br><span class="hljs-comment"># OR </span><br>yarn <span class="hljs-keyword">add</span> mand-mobile<br></code></pre></td></tr></table></figure>
+
 <div style="margin-top: 64px;"></div>
 
 <h3 id="vue-beauty"><a href="#vue-beauty" class="headerlink" title="vue-beauty"></a>vue-beauty</h3><p><a href="https://fe-driver.github.io/vue-beauty" target="_blank" rel="noopener">vue-beauty</a> 是一套基于 vue.js 和 ant-design样式 的PC端 UI 组件库，旨在帮助开发者提升产品体验和开发效率、降低维护成本。</p>
@@ -174,7 +187,7 @@
           <strong class="article-nav-caption">Newer</strong>
           <p class="article-nav-title">
             
-              react开发工具集
+              React开发工具集
             
           </p>
         </article>
